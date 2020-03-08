@@ -1,0 +1,348 @@
+section {
+    padding: 100px 0;
+  }
+  
+  html, main {
+    overflow-x: hidden;
+  }
+/* Body */
+  main {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #9ED5FF
+    ;
+  }
+  
+  h1 {
+    font-size: 200%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+  }
+  
+
+  
+  .timeline {
+    position: relative;
+  }
+  .timeline::before {
+    content: '';
+    background: #FFFAB7;
+    width: 5px;
+    height: 95%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+ 
+  
+  .timeline-content {
+    position: relative;
+    width: 45%;
+    padding: 10px 30px;
+    border-radius: 4px;
+    background: #FFFAB7;
+    box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+  }
+  .timeline-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    right: -15px;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #FFFAB7;
+  }
+  
+  .timeline-img {
+    width: 30px;
+    height: 30px;
+    background: #FFFAB7;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-top: 25px;
+    margin-left: -15px;
+  }
+  
+
+  
+  .timeline-card {
+    padding: 0 !important;
+  }
+  .timeline-card p {
+    padding: 0 20px;
+  }
+  .timeline-card a {
+    margin-left: 20px;
+  }
+/* hello */
+  
+  .timeline-img-header {
+    height: 200px;
+    position: relative;
+    margin-bottom: 20px;
+
+  }
+  .timeline-img-header h2 {
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+  }
+  
+  blockquote {
+    margin-top: 30px;
+    color: #757575;
+    border-left-color: #FFFAB7;
+    padding: 0 20px;
+  }
+  
+  .date {
+    background: #FF4081;
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size:30px;
+
+  }
+  
+  @media screen and (max-width: 768px) {
+    .timeline::before {
+      left: 50px;
+    }
+
+
+    .timeline .timeline-img {
+      left: 30px;
+    }
+    .timeline .timeline-content {
+      max-width: 100%;
+      width: auto;
+      margin-left: 70px;
+    }
+    .timeline .timeline-item:nth-child(even) .timeline-content {
+      float: none;
+    }
+    .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+      content: '';
+      position: absolute;
+      border-style: solid;
+      width: 0;
+      height: 0;
+      top: 30px;
+      left: -15px;
+      border-width: 10px 15px 10px 0;
+      border-color: transparent #FFFAB7 transparent transparent;
+    }
+  }
+
+  /* Hình gắn ờ đây nha */
+
+  .timeline-item {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 70px;
+  }
+  .timeline-item:nth-child(even) .timeline-content {
+    float: right;
+    padding: 40px 30px 10px 30px;
+  }
+  .timeline-item:nth-child(even) .timeline-content .date {
+    right: auto;
+    left: 0;
+    /* border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border-top-right-radius: 25%; */
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content .date {
+    /* border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border-top-left-radius: 25%; */
+  }
+  .timeline-item:nth-child(even) .timeline-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #FFFAB7 transparent transparent;
+  }
+
+  /* .timeline-item .timeline-img-header  {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("/asset/IOT/1.jpg") center center no-repeat;
+    background-size: cover;
+  } */
+
+  .timeline-item .timeline-img-header-1  {
+    background:  url("../asset/IOT/14.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  .timeline-item .timeline-img-header-2  {
+    background:  url("../asset/IOT/15.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-3  {
+    background:  url("../asset/IOT/16.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-4  {
+    background:  url("../asset/IOT/19.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-5  {
+    background:  url("../asset/IOT/17.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-6  {
+    background:  url("../asset/IOT/18.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-7  {
+    background:  url("../asset/IOT/20.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-8  {
+    background:  url("../asset/IOT/21.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-9  {
+    background:  url("../asset/IOT/22.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-10  {
+    background:  url("../asset/IOT/23.png") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-11 {
+    background:  url("../asset/IOT/24.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-12 {
+    background:  url("../asset/IOT/25.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-13 {
+    background:  url("../asset/IOT/26.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-14 {
+    background:  url("../asset/IOT/27.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  .timeline-item .timeline-img-header-15  {
+    background:  url("../asset/IOT/17.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-16 {
+    background:  url("../asset/IOT/18.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-17 {
+    background:  url("../asset/IOT/19.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-18 {
+    background:  url("../asset/IOT/20.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-19 {
+    background:  url("../asset/IOT/21.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-20 {
+    background:  url("../asset/IOT/22.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-21 {
+    background:  url("../asset/IOT/23.png") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-22 {
+    background:  url("../asset/IOT/24.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-23 {
+    background:  url("../asset/IOT/25.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-24 {
+    background:  url("../asset/IOT/26.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-25 {
+    background:  url("../asset/IOT/27.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-26 {
+    background:  url("../asset/IOT/28.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-27 {
+    background:  url("../asset/IOT/29.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-28 {
+    background:  url("../asset/IOT/30.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-item .timeline-img-header-29 {
+    background:  url("../asset/IOT/31.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .timeline-item::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
