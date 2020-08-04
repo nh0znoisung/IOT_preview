@@ -1,3 +1,2 @@
-aaaaaa
-abbbbb
-bbbbbb
+aaaaaaa
+aaa
