@@ -12,14 +12,13 @@ Clone this source code
 ```sh
 $ git clone https://github.com/nh0znoisung/IOT_preview.git
 $ cd IOT_preview
-Open index.html file on your browser
 ```
+Open `index.html` file on your browser
 
-OR
+**OR**
 
-```sh
 Visit page: https://nh0znoisung.github.io/IOT_preview/
-```
+
 
 ## Home page
 Introduce generally about IOT.
